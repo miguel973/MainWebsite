@@ -45,18 +45,14 @@ export default function Home() {
             className="mt-8 space-x-4"
           >
             <Link href="/about">
-              <a className="cursor-pointer">
-                <Button size="lg" className="px-6">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </a>
+              <Button size="lg" className="px-6 cursor-pointer">
+                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </Link>
             <Link href="/contact">
-              <a className="cursor-pointer">
-                <Button variant="outline" size="lg" className="px-6">
-                  Get in Touch
-                </Button>
-              </a>
+              <Button variant="outline" size="lg" className="px-6 cursor-pointer">
+                Get in Touch
+              </Button>
             </Link>
           </motion.div>
         </div>
