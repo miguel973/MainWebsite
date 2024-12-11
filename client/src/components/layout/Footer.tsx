@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Miguel Tavera. All rights reserved.
+            © {currentYear} Miguel Taveras. All rights reserved.
           </p>
         </div>
       </div>

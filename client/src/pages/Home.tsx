@@ -20,7 +20,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="text-5xl font-bold tracking-tight"
           >
-            Miguel Tavera
+            Miguel Taveras
           </motion.h1>
           <motion.h2 
             initial={{ opacity: 0 }}
@@ -45,14 +45,18 @@ export default function Home() {
             className="mt-8 space-x-4"
           >
             <Link href="/about">
-              <Button size="lg" className="px-6">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <a className="cursor-pointer">
+                <Button size="lg" className="px-6">
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="px-6">
-                Get in Touch
-              </Button>
+              <a className="cursor-pointer">
+                <Button variant="outline" size="lg" className="px-6">
+                  Get in Touch
+                </Button>
+              </a>
             </Link>
           </motion.div>
         </div>
