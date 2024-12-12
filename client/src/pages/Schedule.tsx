@@ -110,7 +110,11 @@ export default function Schedule() {
             selected={selectedDate}
             onSelect={setSelectedDate}
             disabled={{ before: new Date() }}
-            className="mx-auto"
+            className="w-full max-w-full p-0"
+            modifiersClassNames={{
+              selected: "bg-primary text-primary-foreground",
+              today: "bg-accent text-accent-foreground",
+            }}
           />
         </Card>
 
