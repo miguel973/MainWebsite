@@ -42,7 +42,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
             className="text-2xl text-muted-foreground mt-4"
           >
-            Senior Engineering Program Manager at Apple -- Apple Intelligence
+            This was made with an LLM called ReplitAgent!
           </motion.h2>
           
           <motion.div 
