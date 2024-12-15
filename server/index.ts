@@ -28,7 +28,22 @@ app.get('*.wav', (req, res, next) => {
   const audioPath = path.join(staticPath, req.path);
   console.log('Attempting to serve audio file from:', audioPath);
   
-  res.sendFile(audioPath, (err) => {
+  // Add detailed file existence check
+  if (!require('fs').existsSync(audioPath)) {
+    console.error('Audio file not found:', {
+      path: audioPath,
+      requestPath: req.path,
+      env: app.get("env")
+    });
+    return res.status(404).json({ error: 'Audio file not found' });
+  }
+
+  res.sendFile(audioPath, {
+    headers: {
+      'Content-Type': 'audio/wav',
+      'Accept-Ranges': 'bytes'
+    }
+  }, (err) => {
     if (err) {
       console.error('Error serving audio file:', {
         path: audioPath,
@@ -36,7 +51,9 @@ app.get('*.wav', (req, res, next) => {
         code: err.code,
         env: app.get("env")
       });
-      next(err);
+      if (!res.headersSent) {
+        res.status(500).json({ error: 'Error serving audio file' });
+      }
     } else {
       console.log('Successfully served audio file:', audioPath);
     }

@@ -55,16 +55,36 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
         onTimeUpdate={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
         onError={(e) => {
-          console.error('Audio loading error:', e.currentTarget.error);
+          const error = e.currentTarget.error;
+          console.error('Audio loading error:', {
+            code: error?.code,
+            message: error?.message,
+            url: audioUrl,
+            mediaError: {
+              MEDIA_ERR_ABORTED: error?.code === 1,
+              MEDIA_ERR_NETWORK: error?.code === 2,
+              MEDIA_ERR_DECODE: error?.code === 3,
+              MEDIA_ERR_SRC_NOT_SUPPORTED: error?.code === 4
+            }
+          });
+          
+          let errorMessage = "Could not load audio file. ";
+          if (error?.code === 2) errorMessage += "Network error occurred.";
+          else if (error?.code === 3) errorMessage += "Audio format is not supported.";
+          else if (error?.code === 4) errorMessage += "Audio source is not supported.";
+          
           toast({
-            title: "Error",
-            description: "Could not load audio file. Please try again later.",
+            title: "Error Playing Audio",
+            description: errorMessage,
             variant: "destructive",
           });
         }}
         preload="auto"
         onLoadedData={() => {
-          console.log('Audio loaded successfully');
+          console.log('Audio loaded successfully:', {
+            url: audioUrl,
+            element: audioRef.current
+          });
         }}
       >
         <source src={audioUrl} type="audio/wav" />
