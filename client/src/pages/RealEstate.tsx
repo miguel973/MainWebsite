@@ -47,7 +47,7 @@ export default function RealEstate() {
         {properties.map((property, index) => (
           <Card key={index} className="p-6">
             <img
-              src={property.image}
+              src="/image.png"
               alt={property.address}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
