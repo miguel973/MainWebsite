@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import AudioPlayer from "@/components/AudioPlayer";
 import ProjectCarousel from "@/components/ProjectCarousel";
@@ -80,6 +81,35 @@ export default function Home() {
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">Featured Projects</h3>
             <ProjectCarousel />
+          </div>
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Featured Properties</h3>
+            <div className="space-y-4">
+              <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
+                <h4 className="font-semibold">307 Mission Ln, Houston, TX 77011</h4>
+                <Badge variant="default" className="mt-2">Available Now</Badge>
+                <a 
+                  href="https://www.har.com/homedetail/307-mission-ln-houston-tx-77011/11104799"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline block mt-2"
+                >
+                  View on HAR.com
+                </a>
+              </div>
+              <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
+                <h4 className="font-semibold">2305 Bastrop St A, Houston, TX 77004</h4>
+                <Badge variant="secondary" className="mt-2">Taken until March 2026</Badge>
+                <a 
+                  href="https://www.har.com/homedetail/2305-bastrop-st-a-houston-tx-77004/10132155"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline block mt-2"
+                >
+                  View on HAR.com
+                </a>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
