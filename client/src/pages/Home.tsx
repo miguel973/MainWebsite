@@ -87,7 +87,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
                 <img
-                  src="/image.png"
+                  src="/mission-townhouse.png"
                   alt="307 Mission Ln"
                   className="w-full h-32 object-cover rounded-lg mb-4"
                 />
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
                 <img
-                  src="/image.png"
+                  src="/bastrop-townhouse.png"
                   alt="2305 Bastrop St A"
                   className="w-full h-32 object-cover rounded-lg mb-4"
                 />

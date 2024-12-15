@@ -7,7 +7,7 @@ const properties = [
     address: "2305 Bastrop St A, Houston, TX 77004",
     harLink: "https://www.har.com/homedetail/2305-bastrop-st-a-houston-tx-77004/10132155",
     status: "Taken until March 2026",
-    image: "/2305-bastrop.jpg",
+    image: "/bastrop-townhouse.png",
     bedrooms: 3,
     bathrooms: "2 Full & 1 Half",
     sqft: 1476,
@@ -17,7 +17,7 @@ const properties = [
     address: "307 Mission Ln, Houston, TX 77011",
     harLink: "https://www.har.com/homedetail/307-mission-ln-houston-tx-77011/11104799",
     status: "Available Now",
-    image: "/307-mission.jpg",
+    image: "/mission-townhouse.png",
     bedrooms: 3,
     bathrooms: "3 Full",
     sqft: 1530,
@@ -47,7 +47,7 @@ export default function RealEstate() {
         {properties.map((property, index) => (
           <Card key={index} className="p-6">
             <img
-              src="/image.png"
+              src={property.image}
               alt={property.address}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
