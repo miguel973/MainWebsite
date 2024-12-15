@@ -14,8 +14,8 @@ export default function Home() {
       exit={{ opacity: 0 }}
       className="container mx-auto px-4 py-16"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="h-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -84,7 +84,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6 }}
-          className="bg-muted p-6 rounded-lg"
+          className="bg-muted p-6 rounded-lg h-full"
         >
           <div className="mt-4">
             <h3 className="text-xl font-semibold mb-4">Featured Projects</h3>
