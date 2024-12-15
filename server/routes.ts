@@ -3,7 +3,16 @@ import { createServer, type Server } from "http";
 import { db } from "../db";
 import { messages, academicPapers, meetingSlots, meetingBookings } from "../db/schema";
 import { eq, like, desc, and, or, gte, lte, asc } from "drizzle-orm";
+import nodemailer from 'nodemailer';
 import { sendMeetingConfirmation } from "./utils/email";
+
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+  },
+});
 
 export function registerRoutes(app: Express): Server {
   const httpServer = createServer(app);
@@ -17,6 +26,7 @@ export function registerRoutes(app: Express): Server {
         return res.status(400).json({ message: "All fields are required" });
       }
 
+      // Store in database
       const newMessage = await db.insert(messages).values({
         name,
         email,
@@ -24,8 +34,25 @@ export function registerRoutes(app: Express): Server {
         createdAt: new Date(),
       }).returning();
 
+      // Send email notification
+      const emailContent = {
+        from: process.env.EMAIL_USER,
+        to: 'taverasholdingsllc@gmail.com',
+        subject: `New Contact Form Submission from ${name}`,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${message}</p>
+        `
+      };
+
+      await transporter.sendMail(emailContent);
+      
       res.status(201).json(newMessage[0]);
     } catch (error) {
+      console.error('Error handling contact form:', error);
       res.status(500).json({ message: "Failed to submit message" });
     }
   });

@@ -17,7 +17,7 @@ export async function sendMeetingConfirmation(
 ) {
   const userEmailContent = {
     from: process.env.EMAIL_USER,
-    to: userEmail,
+    to: 'taverasholdingsllc@gmail.com',
     subject: 'Meeting Confirmation with Miguel Taveras',
     html: `
       <h2>Meeting Confirmation</h2>
