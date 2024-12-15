@@ -25,7 +25,7 @@ export default function Home() {
             <img
               src="/8ced78b7-6457-490a-88e8-c15725fc5300.jpg"
               alt="Miguel Taveras"
-              className="rounded-lg shadow-lg w-64 h-64 object-cover mx-auto md:mx-0"
+              className="rounded-lg shadow-lg w-96 h-96 object-cover mx-auto md:mx-0"
             />
           </motion.div>
           <motion.h1 
