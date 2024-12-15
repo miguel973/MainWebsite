@@ -32,13 +32,33 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
 
     try {
       if (isPlaying) {
-        await audioRef.current.pause();
+        audioRef.current.pause();
+        setIsPlaying(false);
       } else {
-        await audioRef.current.play();
+        // Show loading state while we wait for play to start
+        const playPromise = audioRef.current.play();
+        
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Playback started successfully
+              setIsPlaying(true);
+            })
+            .catch((error) => {
+              // Auto-play was prevented or another error occurred
+              setIsPlaying(false);
+              console.error('Error starting playback:', error);
+              toast({
+                title: "Playback Error",
+                description: error.message || "There was an error starting playback. Please try again.",
+                variant: "destructive",
+              });
+            });
+        }
       }
-      setIsPlaying(!isPlaying);
     } catch (error) {
-      console.error('Error toggling play state:', error);
+      console.error('Error in play/pause operation:', error);
+      setIsPlaying(false);
       toast({
         title: "Playback Error",
         description: "There was an error controlling playback. Please try again.",
@@ -67,14 +87,42 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
     setProgress(value[0]);
   };
 
-  // Handle loading state
+  // Handle loading state and cleanup when audio source changes
   useEffect(() => {
+    let currentAudio = audioRef.current;
+    
+    // Reset states when audio source changes
     setIsLoading(true);
     setIsPlaying(false);
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
+    setProgress(0);
+    
+    if (currentAudio) {
+      // Cleanup existing audio element
+      const playPromise = currentAudio.play && currentAudio.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => currentAudio.pause())
+          .catch(() => {/* Ignore any play/pause errors during cleanup */});
+      } else {
+        currentAudio.pause();
+      }
+      currentAudio.currentTime = 0;
     }
+
+    // Cleanup function
+    return () => {
+      if (currentAudio) {
+        const playPromise = currentAudio.play && currentAudio.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => currentAudio.pause())
+            .catch(() => {/* Ignore any play/pause errors during cleanup */});
+        } else {
+          currentAudio.pause();
+        }
+        currentAudio.currentTime = 0;
+      }
+    };
   }, [audioUrl]);
 
   return (
