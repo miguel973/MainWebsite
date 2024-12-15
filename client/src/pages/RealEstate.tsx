@@ -7,13 +7,21 @@ const properties = [
     address: "2305 Bastrop St A, Houston, TX 77004",
     harLink: "https://www.har.com/homedetail/2305-bastrop-st-a-houston-tx-77004/10132155",
     status: "Taken until March 2026",
-    image: "/2305-bastrop.jpg"
+    image: "/2305-bastrop.jpg",
+    bedrooms: 3,
+    bathrooms: "2 Full & 1 Half",
+    sqft: 1476,
+    type: "Rental - Townhouse/Condo"
   },
   {
     address: "307 Mission Ln, Houston, TX 77011",
     harLink: "https://www.har.com/homedetail/307-mission-ln-houston-tx-77011/11104799",
     status: "Available Now",
-    image: "/307-mission.jpg"
+    image: "/307-mission.jpg",
+    bedrooms: 3,
+    bathrooms: "3 Full",
+    sqft: 1530,
+    type: "Rental - Townhouse/Condo"
   }
 ];
 
@@ -50,6 +58,12 @@ export default function RealEstate() {
             >
               {property.status}
             </Badge>
+            <div className="space-y-2 mb-4">
+              <p>{property.bedrooms} Bedroom(s)</p>
+              <p>{property.bathrooms}</p>
+              <p>{property.sqft.toLocaleString()} Sqft</p>
+              <p>{property.type}</p>
+            </div>
             <a 
               href={property.harLink} 
               target="_blank" 

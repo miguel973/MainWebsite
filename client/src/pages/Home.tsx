@@ -93,6 +93,12 @@ export default function Home() {
                 />
                 <h4 className="font-semibold">307 Mission Ln, Houston, TX 77011</h4>
                 <Badge variant="default" className="mt-2">Available Now</Badge>
+                <div className="space-y-1 mt-2 text-sm">
+                  <p>3 Bedroom(s)</p>
+                  <p>3 Full Bath(s)</p>
+                  <p>1,530 Sqft</p>
+                  <p>Rental - Townhouse/Condo</p>
+                </div>
                 <a 
                   href="https://www.har.com/homedetail/307-mission-ln-houston-tx-77011/11104799"
                   target="_blank"
@@ -110,6 +116,12 @@ export default function Home() {
                 />
                 <h4 className="font-semibold">2305 Bastrop St A, Houston, TX 77004</h4>
                 <Badge variant="secondary" className="mt-2">Taken until March 2026</Badge>
+                <div className="space-y-1 mt-2 text-sm">
+                  <p>3 Bedroom(s)</p>
+                  <p>2 Full & 1 Half Bath(s)</p>
+                  <p>1,476 Sqft</p>
+                  <p>Rental - Townhouse/Condo</p>
+                </div>
                 <a 
                   href="https://www.har.com/homedetail/2305-bastrop-st-a-houston-tx-77004/10132155"
                   target="_blank"
