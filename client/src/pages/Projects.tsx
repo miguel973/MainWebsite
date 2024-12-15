@@ -21,6 +21,30 @@ const projects = [
     description: "Led the development of an advanced natural language classifier for routing Siri requests to specific fine-tuned LLMs and chatGPT. Achieved >90% task completion rate and improved response accuracy by >20 basis points. Successfully handled complex cases including ellipsis/anaphora and on-screen referencing.",
     tags: ["LLM", "Natural Language Processing", "Machine Learning", "System Architecture"],
     year: "2024"
+  },
+  {
+    title: "Siri Health Integration",
+    description: "Launched Siri Health on watchOS 10.2 and iOS 17.2, integrating voice commands with the Health app. Led cross-functional collaboration to enable on-device processing of over 20 health data types, enhancing user privacy and convenience. Users can now easily access their health data using voice commands.",
+    tags: ["iOS", "watchOS", "Health Integration", "Voice Commands", "Privacy"],
+    year: "2023"
+  },
+  {
+    title: "Siri Engagement Enhancement",
+    description: "Drove a 30+% increase in Siri engagement metrics by implementing cutting-edge semantic understanding for handling user hesitation, stuttering, and cut-off requests. Successfully improved response quality for millions of weekly user interactions.",
+    tags: ["User Experience", "Semantic Understanding", "Metrics Optimization"],
+    year: "2023"
+  },
+  {
+    title: "Vendor System Optimization",
+    description: "Led a complex vendor deprecation project that significantly accelerated response times while achieving substantial cost savings. Successfully expanded English-only services to support all Siri languages.",
+    tags: ["System Architecture", "Cost Optimization", "Multilingual Support"],
+    year: "2022"
+  },
+  {
+    title: "NASA VTOL Simulation System",
+    description: "Developed a manufacturing delivery-time simulation for NASA's Revolutionary Vertical Lift Technology Project, focusing on AAM/VTOL vehicle ordering at scale. Created predictive tools for critical component delivery failure analysis, enhancing operational efficiency for specialized missions.",
+    tags: ["Simulation", "Risk Analysis", "Manufacturing", "Aerospace"],
+    year: "2021"
   }
 ];
 
