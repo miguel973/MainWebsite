@@ -62,7 +62,11 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
             variant: "destructive",
           });
         }}
+        preload="auto"
         src={audioUrl}
+        onLoadedData={() => {
+          console.log('Audio loaded successfully');
+        }}
       >
         Your browser does not support the audio element.
       </audio>
