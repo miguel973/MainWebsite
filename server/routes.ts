@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { db } from "../db";
 import { messages, academicPapers, meetingSlots, meetingBookings } from "../db/schema";
 import { eq, like, desc, and, or, gte, lte, asc } from "drizzle-orm";
+import { sendMeetingConfirmation } from "./utils/email";
 
 export function registerRoutes(app: Express): Server {
   const httpServer = createServer(app);
@@ -200,6 +201,20 @@ export function registerRoutes(app: Express): Server {
             updatedAt: new Date(),
           })
           .returning();
+
+        try {
+          // Send confirmation emails
+          await sendMeetingConfirmation(
+            email,
+            name,
+            new Date(slot.startTime),
+            new Date(slot.endTime),
+            topic
+          );
+        } catch (emailError) {
+          console.error('Error sending confirmation email:', emailError);
+          // Continue with booking even if email fails
+        }
 
         return booking[0];
       });
