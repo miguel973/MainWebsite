@@ -12,14 +12,14 @@ const projects = [
     description: "Led the Siri platform integration with Private Cloud Compute, ensuring private, secure, and efficient server processing of Generative AI Siri features.",
     tags: ["Generative AI", "Cloud Computing", "Privacy"],
     year: "2024",
-    link: "https://www.linkedin.com/in/taverasmiguel/overlay/1727969660428/single-media-viewer?type=LINK&profileId=ACoAABJh7I8BdPMOE7pU9_LgAGFEsRCRuwjOVM0"
+    link: "https://security.apple.com/blog/private-cloud-compute/"
   },
   {
-    title: "Cross-App Context Awareness for Siri",
-    description: "Developed intelligent cross-app action system enabling Siri to understand context across applications, allowing seamless actions like enhancing and moving photos between apps.",
+    title: "Cross-App Context Awareness and In-App Actions for Siri",
+    description: "Developed intelligent cross-app action system enabling Siri to understand context across applications. Users can seamlessly perform actions across apps, with Siri understanding context and automating multi-step processes.",
     tags: ["Machine Learning", "NLP", "User Context"],
     year: "2024",
-    link: "https://developer.apple.com/documentation/appintents/integrating-actions-with-siri-and-apple-intelligence"
+    link: "https://www.apple.com/apple-intelligence/#:~:text=Seamlessly%20take%20action,a%20finger.1"
   },
   {
     title: "Natural Language Router Development",
