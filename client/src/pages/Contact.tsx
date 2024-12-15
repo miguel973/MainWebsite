@@ -29,40 +29,24 @@ export default function Contact() {
     }
   });
 
-  const mutation = useMutation({
-    mutationFn: async (data: FormData) => {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-      
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
-      
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      form.reset();
-    },
-    onError: () => {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-
   const onSubmit = (data: FormData) => {
-    mutation.mutate(data);
+    const subject = "Contact Form Submission";
+    const body = `
+Name: ${data.name}
+Email: ${data.email}
+
+Message:
+${data.message}
+    `;
+    
+    window.location.href = `mailto:taverasholdingsllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    toast({
+      title: "Opening email client",
+      description: "Your default email application will open to send the message.",
+    });
+    
+    form.reset();
   };
 
   return (
