@@ -15,6 +15,18 @@ export default function Home() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1 }}
+            className="mb-8"
+          >
+            <img
+              src="/8ced78b7-6457-490a-88e8-c15725fc5300.jpg"
+              alt="Miguel Taveras"
+              className="rounded-lg shadow-lg w-64 h-64 object-cover mx-auto md:mx-0"
+            />
+          </motion.div>
           <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
