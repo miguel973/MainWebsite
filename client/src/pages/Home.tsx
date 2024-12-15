@@ -36,7 +36,7 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-relaxed"
           >
-            Driving technical product strategy, development, and delivery of machine learning and large language model solutions for Siri and Search. Specializing in accuracy, platform scalability, and natural language understanding technologies.
+            Senior Technical Product Manager with extensive experience in AI/ML, LLMs, program management, and product development. Dedicated to keeping the user front and center in all technological advancements. I specialize in natural language understanding and orchestrating complex AI/ML features for major OS releases.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}

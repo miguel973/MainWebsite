@@ -23,8 +23,22 @@ export default function About() {
           <Card className="p-6">
             <h2 className="text-2xl font-semibold mb-4">Professional Journey</h2>
             <p className="text-lg leading-relaxed">
-              As a Senior Engineering Program Manager at Apple Intelligence, I drive the technical product strategy, development, and delivery of machine learning and large language model solutions for Siri and Search. I focus on improving accuracy, platform scalability, and natural language understanding capabilities.
+              As a Senior Engineering Program Manager at Apple Intelligence, I drive innovation in AI/ML and LLMs while keeping the user front and center. With a proven track record in orchestrating complex AI/ML client/server software features for major OS releases involving 100+ people, I excel at managing multiple work streams and translating technical requirements into long-term platform roadmaps.
             </p>
+            <div className="mt-4 space-y-4">
+              <div>
+                <h3 className="font-semibold">Gen AI Leadership</h3>
+                <p className="text-muted-foreground">Drive innovation by combining expertise in generative AI, large language models, and infrastructure optimization to create scalable, user-focused solutions that align with cutting-edge trends.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold">Strategic Program Management</h3>
+                <p className="text-muted-foreground">Excel at orchestrating cross-functional strategies to solve complex problems, enabling seamless integration of AI technologies with enterprise systems and enhancing product ecosystems.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold">Collaborative Visionary</h3>
+                <p className="text-muted-foreground">Cultivate collaboration across engineering, research, and design teams to develop forward-thinking features, translating market insights into impactful, future-ready AI solutions.</p>
+              </div>
+            </div>
           </Card>
 
           <Card className="p-6">
