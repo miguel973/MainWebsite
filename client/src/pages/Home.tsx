@@ -94,11 +94,6 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-4">Featured Properties</h3>
             <div className="space-y-4">
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
-                <img
-                  src="/mission-townhouse.png"
-                  alt="307 Mission Ln"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
                 <h4 className="font-semibold">307 Mission Ln, Houston, TX 77011</h4>
                 <Badge variant="default" className="mt-2">Available Now</Badge>
                 <div className="space-y-1 mt-2 text-sm">
@@ -117,11 +112,6 @@ export default function Home() {
                 </a>
               </div>
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
-                <img
-                  src="/bastrop.png"
-                  alt="2305 Bastrop St A"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
                 <h4 className="font-semibold">2305 Bastrop St A, Houston, TX 77004</h4>
                 <Badge variant="secondary" className="mt-2">Taken until March 2026</Badge>
                 <div className="space-y-1 mt-2 text-sm">

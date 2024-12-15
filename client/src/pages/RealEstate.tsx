@@ -46,11 +46,6 @@ export default function RealEstate() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         {properties.map((property, index) => (
           <Card key={index} className="p-6">
-            <img
-              src={`/${property.image.split('/').pop()}`}
-              alt={property.address}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
             <h3 className="text-xl font-semibold mb-2">{property.address}</h3>
             <Badge 
               variant={property.status.includes("Available") ? "default" : "secondary"}
