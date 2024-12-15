@@ -110,7 +110,7 @@ export default function Home() {
               </div>
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
                 <img
-                  src="/bastrop.png"
+                  src={`${import.meta.env.BASE_URL}bastrop.png`}
                   alt="2305 Bastrop St A"
                   className="w-full h-32 object-cover rounded-lg mb-4"
                 />
