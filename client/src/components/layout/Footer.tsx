@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-xl font-bold">MT</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
-              Senior Engineering Program Manager at Apple Intelligence
+              Senior Engineering Program Manager at Apple - Apple Intelligence
             </p>
           </div>
 
@@ -35,13 +35,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/publications">
-                  <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer">
-                    Publications
-                  </span>
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact">
                   <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer">
                     Contact
@@ -59,7 +52,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Miguel Taveras - Taveras Holdings LLC. All rights reserved.
+            © {currentYear} Miguel Taveras - Taveras Holdings LLC. All rights reserved. This was made with an LLM called ReplitAgent!
           </p>
         </div>
       </div>
