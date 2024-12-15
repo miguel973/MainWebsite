@@ -53,7 +53,18 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
         src={audioUrl}
         onTimeUpdate={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
-      />
+        onError={(e) => {
+          console.error('Audio loading error:', e);
+          toast({
+            title: "Error",
+            description: "Could not load audio file. Please try again later.",
+            variant: "destructive",
+          });
+        }}
+      >
+        <source src={audioUrl} type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
       
       <div className="flex items-center gap-4">
         <Button
