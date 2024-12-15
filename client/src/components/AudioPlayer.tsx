@@ -2,12 +2,14 @@ import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 interface AudioPlayerProps {
   audioUrl: string;
 }
 
 export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
+  const { toast } = useToast();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -50,11 +52,11 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
     <div className="bg-card p-4 rounded-lg">
       <audio
         ref={audioRef}
-        src={audioUrl}
         onTimeUpdate={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
+        onLoadStart={() => console.log('Audio loading started:', audioUrl)}
         onError={(e) => {
-          console.error('Audio loading error:', e);
+          console.error('Audio loading error:', e.currentTarget.error);
           toast({
             title: "Error",
             description: "Could not load audio file. Please try again later.",
@@ -63,6 +65,8 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
         }}
       >
         <source src={audioUrl} type="audio/wav" />
+        <source src={audioUrl} type="audio/x-wav" />
+        <source src={audioUrl} type="audio/webm" />
         Your browser does not support the audio element.
       </audio>
       
