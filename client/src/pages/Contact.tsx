@@ -113,10 +113,9 @@ ${data.message}
 
             <Button
               type="submit"
-              disabled={mutation.isPending}
               className="w-full"
             >
-              {mutation.isPending ? "Sending..." : "Send Message"}
+              Send Message
             </Button>
           </form>
         </Card>
