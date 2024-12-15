@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import AudioPlayer from "@/components/AudioPlayer";
+import ProjectCarousel from "@/components/ProjectCarousel";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
@@ -64,6 +65,10 @@ export default function Home() {
         >
           <h3 className="text-xl font-semibold mb-4">Audio Overview</h3>
           <AudioPlayer audioUrl={`${import.meta.env.BASE_URL}Me.wav`} />
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Featured Projects</h3>
+            <ProjectCarousel />
+          </div>
         </motion.div>
       </div>
     </motion.div>
