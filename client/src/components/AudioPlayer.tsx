@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
@@ -13,24 +13,44 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const togglePlay = () => {
-    if (audioRef.current) {
+  // Cleanup effect
+  useEffect(() => {
+    const audio = audioRef.current;
+    return () => {
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    };
+  }, []);
+
+  const togglePlay = async () => {
+    if (!audioRef.current || isLoading) return;
+
+    try {
       if (isPlaying) {
-        audioRef.current.pause();
+        await audioRef.current.pause();
       } else {
-        audioRef.current.play();
+        await audioRef.current.play();
       }
       setIsPlaying(!isPlaying);
+    } catch (error) {
+      console.error('Error toggling play state:', error);
+      toast({
+        title: "Playback Error",
+        description: "There was an error controlling playback. Please try again.",
+        variant: "destructive",
+      });
     }
   };
 
   const toggleMute = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
+    if (!audioRef.current || isLoading) return;
+    audioRef.current.muted = !isMuted;
+    setIsMuted(!isMuted);
   };
 
   const handleTimeUpdate = () => {
@@ -41,12 +61,21 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
   };
 
   const handleSeek = (value: number[]) => {
-    if (audioRef.current) {
-      const time = (value[0] / 100) * audioRef.current.duration;
-      audioRef.current.currentTime = time;
-      setProgress(value[0]);
-    }
+    if (!audioRef.current || isLoading) return;
+    const time = (value[0] / 100) * audioRef.current.duration;
+    audioRef.current.currentTime = time;
+    setProgress(value[0]);
   };
+
+  // Handle loading state
+  useEffect(() => {
+    setIsLoading(true);
+    setIsPlaying(false);
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+  }, [audioUrl]);
 
   return (
     <div className="bg-card p-4 rounded-lg">
@@ -73,6 +102,9 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
           else if (error?.code === 3) errorMessage += "Audio format is not supported.";
           else if (error?.code === 4) errorMessage += "Audio source is not supported.";
           
+          setIsLoading(false);
+          setIsPlaying(false);
+          
           toast({
             title: "Error Playing Audio",
             description: errorMessage,
@@ -85,7 +117,9 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
             url: audioUrl,
             element: audioRef.current
           });
+          setIsLoading(false);
         }}
+        onLoadStart={() => setIsLoading(true)}
       >
         <source src={audioUrl.replace('.wav', '.mp3')} type="audio/mpeg" />
         <source src={audioUrl} type="audio/wav" />
@@ -97,6 +131,7 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
           variant="outline"
           size="icon"
           onClick={togglePlay}
+          disabled={isLoading}
           className="h-10 w-10"
         >
           {isPlaying ? (
@@ -112,6 +147,7 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
             onValueChange={handleSeek}
             max={100}
             step={0.1}
+            disabled={isLoading}
           />
         </div>
 
@@ -119,6 +155,7 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
           variant="outline"
           size="icon"
           onClick={toggleMute}
+          disabled={isLoading}
           className="h-10 w-10"
         >
           {isMuted ? (

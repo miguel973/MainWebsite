@@ -1,0 +1,23 @@
+[plugin:runtime-error-plugin] The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
+    at <anonymous> (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/@replit/vite-plugin-runtime-error-modal/src/index.ts:29:37)
+    at <anonymous> (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:59265:39)
+    at Set.forEach (<anonymous>)
+    at WebSocket.<anonymous> (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:59265:17)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:58407:22)
+    at Receiver.emit (node:events:519:28)
+    at Receiver.dataMessage (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:55987:14)
+    at Receiver.getData (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:55887:10)
+    at Receiver.startLoop (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:55558:16)
+    at Receiver._write (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:55485:10)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Socket.socketOnData (/home/runner/415d4506-9a24-4b56-91c5-98831b29630b/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:58542:37)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:191:23
+Click outside, press Esc key, or fix the code to dismiss.
+You can also disable this overlay by setting server.hmr.overlay to false in vite.config.js.
