@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-xl font-bold">MT</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
-              Senior Engineering Program Manager at Apple
+              Senior Engineering Program Manager at Apple Intelligence
             </p>
           </div>
 

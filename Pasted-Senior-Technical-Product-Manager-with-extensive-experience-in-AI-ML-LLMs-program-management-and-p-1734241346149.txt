@@ -1,0 +1,48 @@
+Senior Technical Product Manager with extensive experience in AI/ML, LLMs, program management, and product
+development. Dedicated to keeping the user front and center in all technological advancements. I specialize in natural
+language understanding and have a proven track record in orchestrating complex AI/ML client/server software features for
+major OS releases involving 100+ people. Skilled in data-driven decision-making, managing multiple work streams
+interdependently, and distilling technical requirements from partners into long-term platform roadmaps.
+● Gen AI Leadership: Drive innovation by combining expertise in generative AI, large language models, and infrastructure
+optimization to create scalable, user-focused solutions that align with cutting-edge trends.
+● Strategic Program Management: Excel at orchestrating cross-functional strategies to solve complex problems, enabling
+seamless integration of AI technologies with enterprise systems and enhancing product ecosystems.
+● Collaborative Visionary: Cultivate collaboration across engineering, research, and design teams to develop
+forward-thinking features, translating market insights into impactful, future-ready AI solutions.
+WORK EXPERIENCE
+Sr Engineering Program Manager, Apple Intelligence NLU Apple Inc. / Cupertino, CA Feb 2024 - Present
+● Private Cloud Integration: Led the Siri platform integration with Private Cloud Compute, ensuring private, secure, and
+efficient server processing of Generative AI Siri features. Enhanced user privacy and processing efficiency, protecting
+user data for the Apple Intelligence release in iOS 18.1 and macOS Sequoia 15.2.
+● Personal Context Search: Launched a more intelligent Siri that leverages personal context to provide real-time,
+personalized assistance. Allowed Siri to use on-device information for tasks such as locating flight details or
+summarizing information on the screen. Double-digit increase in user engagement and task completion rates.
+● New NL Router Development: Led the development of a natural language classifier to rewrite and precisely route Siri
+requests to specific fine-tuned LLMs and chatGPT, resulting in >90% task completion and improving the accuracy and
+helpfulness of responses. Addressed ellipsis/anaphora use cases and on-screen referencing. Double-digit increases in
+task completion and improved response accuracy by >20 basis points.
+Product Manager, Siri/Search Apple Inc. / Seattle, WA Jan 2021 - Feb 2024
+● Metric-Driven Enhancement: Led a 30+% increase in Siri engagement metrics using cutting-edge semantic
+understanding to prompt users to try their request again when predicted hesitation, stuttering, or cut-off occurred.
+Resulted in XM # of better responses to weekly user requests.
+● Innovative Product Launches: Launched more than 15 new Siri experiences, most notably Siri Health on watchOS 10.2
+and iOS 17.2. Integrating Siri into the Health app gave users easier access to their Health data with their voice (Try: Siri,
+how many steps did I take today?). Drove cross-functional collaboration with engineering, data science, and marketing
+teams to enable on-device processing of over 20 health data types, enhancing user privacy and convenience
+(NewsRoom).
+● Cost Savings: Navigated a technically complex vendor deprecation, accelerating response times for XM # of requests
+while saving the company $XM in 3P operational costs and expanding English-only services to all Siri languages.
+Program Manager Intern, Supply Chain NASA Ames Research Center / Mountain View, CA Jan 2021 - May 2021
+● Innovative Problem Solving: Delivered a manufacturing delivery-time simulation for ordering AAM/VTOL vehicles at
+scale for NASA’s Revolutionary Vertical Lift Technology Project with cross-functional collaboration and innovative
+problem-solving.
+● Risk Mitigation: Implemented a tool for predicting critical component delivery failures, enhancing operational efficiency
+in drone deployment for Navy Seals' missions.
+Instructional Designer, Strategic Ascent / Houston, TX Jan 2019 - Jan 2021
+● Learning & Development Efficiency and Cost Savings: Designed virtual and facilitated training curriculums for entry-level
+engineers, cutting onboarding time to chargeability by 17% and profiting quicker from new hires.
+● Risk Mitigation: Executed organizational employee compliance assessments, resulting in tailored curricula and
+substantial $XM government compliance cost savings for clients.
+EDUCATION
+University Of Houston / Houston, TX / M.S Management Information Systems, 2022
+University Of Houston / Houston, TX / B.S Human Resource Development, 2020

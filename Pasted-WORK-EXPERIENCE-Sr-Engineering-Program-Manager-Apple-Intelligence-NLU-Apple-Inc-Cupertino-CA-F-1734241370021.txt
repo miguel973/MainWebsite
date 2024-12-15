@@ -1,0 +1,23 @@
+WORK EXPERIENCE
+Sr Engineering Program Manager, Apple Intelligence NLU Apple Inc. / Cupertino, CA Feb 2024 - Present
+● Private Cloud Integration: Led the Siri platform integration with Private Cloud Compute, ensuring private, secure, and
+efficient server processing of Generative AI Siri features. Enhanced user privacy and processing efficiency, protecting
+user data for the Apple Intelligence release in iOS 18.1 and macOS Sequoia 15.2.
+● Personal Context Search: Launched a more intelligent Siri that leverages personal context to provide real-time,
+personalized assistance. Allowed Siri to use on-device information for tasks such as locating flight details or
+summarizing information on the screen. Double-digit increase in user engagement and task completion rates.
+● New NL Router Development: Led the development of a natural language classifier to rewrite and precisely route Siri
+requests to specific fine-tuned LLMs and chatGPT, resulting in >90% task completion and improving the accuracy and
+helpfulness of responses. Addressed ellipsis/anaphora use cases and on-screen referencing. Double-digit increases in
+task completion and improved response accuracy by >20 basis points.
+Product Manager, Siri/Search Apple Inc. / Seattle, WA Jan 2021 - Feb 2024
+● Metric-Driven Enhancement: Led a 30+% increase in Siri engagement metrics using cutting-edge semantic
+understanding to prompt users to try their request again when predicted hesitation, stuttering, or cut-off occurred.
+Resulted in XM # of better responses to weekly user requests.
+● Innovative Product Launches: Launched more than 15 new Siri experiences, most notably Siri Health on watchOS 10.2
+and iOS 17.2. Integrating Siri into the Health app gave users easier access to their Health data with their voice (Try: Siri,
+how many steps did I take today?). Drove cross-functional collaboration with engineering, data science, and marketing
+teams to enable on-device processing of over 20 health data types, enhancing user privacy and convenience
+(NewsRoom).
+● Cost Savings: Navigated a technically complex vendor deprecation, accelerating response times for XM # of requests
+while saving the company $XM in 3P operational costs and expanding English-only services to all Siri languages.

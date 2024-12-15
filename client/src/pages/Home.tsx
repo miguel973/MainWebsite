@@ -28,7 +28,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
             className="text-2xl text-muted-foreground mt-4"
           >
-            Senior Engineering Program Manager at Apple
+            Senior Engineering Program Manager at Apple Intelligence
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -36,7 +36,7 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-relaxed"
           >
-            Specializing in Natural Language Understanding and driving innovation in AI technology. Leading high-impact engineering teams to deliver groundbreaking solutions.
+            Driving technical product strategy, development, and delivery of machine learning and large language model solutions for Siri and Search. Specializing in accuracy, platform scalability, and natural language understanding technologies.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}
