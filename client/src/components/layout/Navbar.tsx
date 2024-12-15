@@ -22,7 +22,11 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <span className="text-xl font-bold cursor-pointer">MT</span>
+              <img 
+                src="/signal-2024-12-14-215011_002.png" 
+                alt="Taveras Holdings LLC"
+                className="h-8 w-auto cursor-pointer"
+              />
             </Link>
           </div>
 
