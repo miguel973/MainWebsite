@@ -5,22 +5,22 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "NLP Engine Optimization",
-    description: "Led the optimization of Apple's core NLP engine, resulting in 40% improved processing efficiency and enhanced accuracy in multiple languages.",
-    tags: ["Natural Language Processing", "Machine Learning", "Python", "TensorFlow"],
-    year: "2022-2023"
+    title: "Private Cloud Integration for Siri",
+    description: "Led the Siri platform integration with Private Cloud Compute, ensuring private, secure, and efficient server processing of Generative AI Siri features. Enhanced user privacy and processing efficiency, protecting user data for the Apple Intelligence release in iOS 18.1 and macOS Sequoia 15.2.",
+    tags: ["Generative AI", "Cloud Computing", "Privacy", "Security", "iOS", "macOS"],
+    year: "2024"
   },
   {
-    title: "Cross-Platform Voice Assistant Integration",
-    description: "Managed the integration of advanced NLU capabilities across Apple's ecosystem, improving user interaction accuracy by 35%.",
-    tags: ["Voice Recognition", "iOS", "macOS", "Machine Learning"],
-    year: "2021-2022"
+    title: "Personal Context Search Enhancement",
+    description: "Launched an intelligent Siri system leveraging personal context for real-time, personalized assistance. Implemented on-device information processing for tasks like flight details lookup and screen content summarization, achieving double-digit increase in user engagement and task completion rates.",
+    tags: ["Machine Learning", "NLP", "User Context", "On-device Processing"],
+    year: "2024"
   },
   {
-    title: "Multilingual Understanding Framework",
-    description: "Developed a framework for real-time language understanding supporting 25+ languages with 95% accuracy.",
-    tags: ["NLP", "Distributed Systems", "Scalability"],
-    year: "2020-2021"
+    title: "Natural Language Router Development",
+    description: "Led the development of an advanced natural language classifier for routing Siri requests to specific fine-tuned LLMs and chatGPT. Achieved >90% task completion rate and improved response accuracy by >20 basis points. Successfully handled complex cases including ellipsis/anaphora and on-screen referencing.",
+    tags: ["LLM", "Natural Language Processing", "Machine Learning", "System Architecture"],
+    year: "2024"
   }
 ];
 
