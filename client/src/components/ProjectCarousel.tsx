@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Using the same projects data from Projects.tsx
@@ -11,19 +11,22 @@ const projects = [
     title: "Private Cloud Integration for Siri",
     description: "Led the Siri platform integration with Private Cloud Compute, ensuring private, secure, and efficient server processing of Generative AI Siri features.",
     tags: ["Generative AI", "Cloud Computing", "Privacy"],
-    year: "2024"
+    year: "2024",
+    link: "https://www.linkedin.com/in/taverasmiguel/overlay/1727969660428/single-media-viewer?type=LINK&profileId=ACoAABJh7I8BdPMOE7pU9_LgAGFEsRCRuwjOVM0"
   },
   {
-    title: "Personal Context Search Enhancement",
-    description: "Launched an intelligent Siri system leveraging personal context for real-time, personalized assistance.",
+    title: "Cross-App Context Awareness for Siri",
+    description: "Developed intelligent cross-app action system enabling Siri to understand context across applications, allowing seamless actions like enhancing and moving photos between apps.",
     tags: ["Machine Learning", "NLP", "User Context"],
-    year: "2024"
+    year: "2024",
+    link: "https://developer.apple.com/documentation/appintents/integrating-actions-with-siri-and-apple-intelligence"
   },
   {
     title: "Natural Language Router Development",
     description: "Led the development of an advanced natural language classifier for routing Siri requests to specific fine-tuned LLMs and chatGPT.",
     tags: ["LLM", "NLP", "Machine Learning"],
-    year: "2024"
+    year: "2024",
+    link: "https://www.linkedin.com/in/taverasmiguel/overlay/1719782013388/single-media-viewer?type=LINK&profileId=ACoAABJh7I8BdPMOE7pU9_LgAGFEsRCRuwjOVM0"
   }
 ];
 
@@ -39,7 +42,7 @@ export default function ProjectCarousel() {
   };
 
   // Auto-advance every 5 seconds
-  useState(() => {
+  useEffect(() => {
     const timer = setInterval(nextSlide, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -55,7 +58,19 @@ export default function ProjectCarousel() {
           transition={{ duration: 0.3 }}
         >
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-2">{projects[currentIndex].title}</h3>
+            <div className="flex justify-between items-start mb-2">
+              <h3 className="text-xl font-semibold">{projects[currentIndex].title}</h3>
+              {projects[currentIndex].link && (
+                <a 
+                  href={projects[currentIndex].link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  <ExternalLink className="h-5 w-5" />
+                </a>
+              )}
+            </div>
             <p className="text-muted-foreground mb-4">{projects[currentIndex].description}</p>
             <div className="flex flex-wrap gap-2 mb-2">
               {projects[currentIndex].tags.map((tag, index) => (
