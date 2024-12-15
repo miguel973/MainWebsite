@@ -23,7 +23,7 @@ const projects = [
     description: "Led the development of an advanced natural language classifier for routing Siri requests to specific fine-tuned LLMs and chatGPT. Achieved >90% task completion rate and improved response accuracy by >20 basis points. Successfully handled complex cases including ellipsis/anaphora and on-screen referencing.",
     tags: ["LLM", "Natural Language Processing", "Machine Learning", "System Architecture"],
     year: "2024",
-    link: "https://www.linkedin.com/in/taverasmiguel/overlay/1719782013388/single-media-viewer?type=LINK&profileId=ACoAABJh7I8BdPMOE7pU9_LgAGFEsRCRuwjOVM0"
+    link: "https://youtu.be/f1-_OAJ4TG8?t=28"
   },
   {
     title: "Siri Health Integration",
