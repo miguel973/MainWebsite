@@ -52,7 +52,7 @@ export default function Home() {
             className="mt-6 bg-muted p-4 rounded-lg"
           >
             <h3 className="text-xl font-semibold mb-4">Audio Overview</h3>
-            <AudioPlayer audioUrl={`${import.meta.env.BASE_URL}Me.wav`} />
+            <AudioPlayer audioUrl="/Me.wav" />
           </motion.div>
           <motion.p 
             initial={{ opacity: 0 }}

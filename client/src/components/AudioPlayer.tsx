@@ -54,7 +54,6 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
         ref={audioRef}
         onTimeUpdate={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
-        onLoadStart={() => console.log('Audio loading started:', audioUrl)}
         onError={(e) => {
           console.error('Audio loading error:', e.currentTarget.error);
           toast({
@@ -63,10 +62,8 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
             variant: "destructive",
           });
         }}
+        src={audioUrl}
       >
-        <source src={audioUrl} type="audio/wav" />
-        <source src={audioUrl} type="audio/x-wav" />
-        <source src={audioUrl} type="audio/webm" />
         Your browser does not support the audio element.
       </audio>
       
