@@ -20,11 +20,14 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <img 
-                src="/signal-2024-12-14-215011_002.png" 
-                alt="Taveras Holdings LLC"
-                className="h-8 w-auto cursor-pointer"
-              />
+              <div className="flex items-center">
+                <img 
+                  src="/signal-2024-12-14-215011_002.png" 
+                  alt="Taveras Holdings LLC"
+                  className="h-16 w-auto cursor-pointer"
+                />
+                <span className="ml-2 text-muted-foreground text-sm">Taveras Holdings LLC</span>
+              </div>
             </Link>
           </div>
 
