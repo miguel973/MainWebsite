@@ -59,6 +59,25 @@ export default function About() {
                 <div className="text-muted-foreground">Apple • Aug 2021 - Feb 2024</div>
                 <p className="mt-2">Led end-user experiences for Siri and Search, with notable achievements in health data integration and accessibility features.</p>
               </li>
+              <li>
+                <div className="font-semibold">Instructional Designer</div>
+                <div className="text-muted-foreground">Strategic Ascent • Jan 2019 - Jan 2021</div>
+                <p className="mt-2">Designed virtual training curricula for entry-level engineers, reducing onboarding time by 17%. Led organizational compliance assessments resulting in substantial cost savings.</p>
+              </li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h2 className="text-2xl font-semibold mb-4">Education</h2>
+            <ul className="space-y-4">
+              <li>
+                <div className="font-semibold">M.S. Management Information Systems</div>
+                <div className="text-muted-foreground">University of Houston • 2022</div>
+              </li>
+              <li>
+                <div className="font-semibold">B.S. Human Resource Development</div>
+                <div className="text-muted-foreground">University of Houston • 2020</div>
+              </li>
             </ul>
           </Card>
 
