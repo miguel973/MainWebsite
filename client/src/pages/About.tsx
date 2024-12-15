@@ -60,6 +60,16 @@ export default function About() {
                 <p className="mt-2">Led end-user experiences for Siri and Search, with notable achievements in health data integration and accessibility features.</p>
               </li>
               <li>
+                <div className="font-semibold">CIO Advisory Intern</div>
+                <div className="text-muted-foreground">KPMG US • May 2021 - Jul 2021</div>
+                <p className="mt-2">Collaborated with leadership to align IT capabilities with strategic objectives, focusing on next-generation technologies and digital transformation. Helped optimize IT programs and develop solutions that maximize business impact and technological efficiency.</p>
+              </li>
+              <li>
+                <div className="font-semibold">Program Manager Intern, Supply Chain</div>
+                <div className="text-muted-foreground">NASA Ames Research Center • Jan 2021 - May 2021</div>
+                <p className="mt-2">Delivered manufacturing delivery-time simulation for NASA's Revolutionary Vertical Lift Technology Project, focusing on AAM/VTOL vehicle procurement. Developed predictive tools for critical component delivery analysis, enhancing operational efficiency for specialized missions.</p>
+              </li>
+              <li>
                 <div className="font-semibold">Instructional Designer</div>
                 <div className="text-muted-foreground">Strategic Ascent • Jan 2019 - Jan 2021</div>
                 <p className="mt-2">Designed virtual training curricula for entry-level engineers, reducing onboarding time by 17%. Led organizational compliance assessments resulting in substantial cost savings.</p>
