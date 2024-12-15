@@ -8,7 +8,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Serve static files with proper MIME types
-app.use(express.static(path.join(process.cwd(), 'client/public'), {
+const staticPath = app.get("env") === "development" 
+  ? path.join(process.cwd(), 'client/public')
+  : path.join(process.cwd(), 'dist/public');
+
+console.log('Static files being served from:', staticPath);
+
+app.use(express.static(staticPath, {
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.wav')) {
       res.set('Content-Type', 'audio/wav');
@@ -17,13 +23,22 @@ app.use(express.static(path.join(process.cwd(), 'client/public'), {
   fallthrough: true // Continue to next middleware if file not found
 }));
 
-// Add specific route for audio files with error handling
+// Add specific route for audio files with detailed error handling
 app.get('*.wav', (req, res, next) => {
-  const audioPath = path.join(process.cwd(), 'client/public', req.path);
+  const audioPath = path.join(staticPath, req.path);
+  console.log('Attempting to serve audio file from:', audioPath);
+  
   res.sendFile(audioPath, (err) => {
     if (err) {
-      console.error('Error serving audio file:', err);
+      console.error('Error serving audio file:', {
+        path: audioPath,
+        error: err.message,
+        code: err.code,
+        env: app.get("env")
+      });
       next(err);
+    } else {
+      console.log('Successfully served audio file:', audioPath);
     }
   });
 });
