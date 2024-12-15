@@ -18,6 +18,8 @@ app.use(express.static(staticPath, {
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.wav')) {
       res.set('Content-Type', 'audio/wav');
+    } else if (filePath.endsWith('.mp3')) {
+      res.set('Content-Type', 'audio/mpeg');
     }
   },
   fallthrough: true // Continue to next middleware if file not found

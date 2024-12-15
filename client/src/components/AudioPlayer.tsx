@@ -87,9 +87,8 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
           });
         }}
       >
-        <source src={audioUrl} type="audio/wav" />
         <source src={audioUrl.replace('.wav', '.mp3')} type="audio/mpeg" />
-        <source src={audioUrl.replace('.wav', '.ogg')} type="audio/ogg" />
+        <source src={audioUrl} type="audio/wav" />
         Your browser does not support the audio element.
       </audio>
       
