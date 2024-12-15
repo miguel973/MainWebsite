@@ -63,7 +63,7 @@ export default function Home() {
           className="bg-muted p-6 rounded-lg"
         >
           <h3 className="text-xl font-semibold mb-4">Audio Overview</h3>
-          <AudioPlayer audioUrl="/resume-overview.mp3" />
+          <AudioPlayer audioUrl="/Me.wav" />
         </motion.div>
       </div>
     </motion.div>
