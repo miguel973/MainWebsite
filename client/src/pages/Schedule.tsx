@@ -105,17 +105,26 @@ export default function Schedule() {
       <div className="grid md:grid-cols-2 gap-8">
         <Card className="p-6">
           <h2 className="text-xl font-semibold mb-4">Select a Date</h2>
-          <DayPicker
-            mode="single"
-            selected={selectedDate}
-            onSelect={setSelectedDate}
-            disabled={{ before: new Date() }}
-            className="w-full max-w-full p-0"
-            modifiersClassNames={{
-              selected: "bg-primary text-primary-foreground",
-              today: "bg-accent text-accent-foreground",
-            }}
-          />
+          <div className="flex justify-center">
+            <DayPicker
+              mode="single"
+              selected={selectedDate}
+              onSelect={setSelectedDate}
+              disabled={{ before: new Date() }}
+              className="w-full"
+              modifiersClassNames={{
+                selected: "bg-primary text-primary-foreground",
+                today: "bg-accent text-accent-foreground",
+              }}
+              styles={{
+                root: { width: '100%' },
+                months: { width: '100%' },
+                month: { width: '100%' },
+                caption: { width: '100%' },
+                table: { width: '100%' },
+              }}
+            />
+          </div>
         </Card>
 
         <div>

@@ -5,22 +5,17 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: SiLinkedin,
-    url: "https://linkedin.com/in/miguel-tavera",
+    url: "https://www.linkedin.com/in/taverasmiguel/",
   },
   {
     name: "X (Twitter)",
     icon: SiX,
-    url: "https://twitter.com/miguel_tavera",
+    url: "https://x.com/MiguelTaveras_",
   },
   {
     name: "GitHub",
     icon: SiGithub,
-    url: "https://github.com/miguel-tavera",
-  },
-  {
-    name: "TikTok",
-    icon: SiTiktok,
-    url: "https://tiktok.com/@miguel.gaming",
+    url: "https://github.com/miguel973",
   },
 ];
 
