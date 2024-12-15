@@ -25,39 +25,21 @@ app.use(express.static(staticPath, {
   fallthrough: true // Continue to next middleware if file not found
 }));
 
-// Add specific route for audio files with detailed error handling
-app.get('*.wav', (req, res, next) => {
+// Add specific route for MP3 files
+app.get('*.mp3', (req, res, next) => {
   const audioPath = path.join(staticPath, req.path);
-  console.log('Attempting to serve audio file from:', audioPath);
+  console.log('Serving MP3 file:', audioPath);
   
-  // Add detailed file existence check
-  if (!require('fs').existsSync(audioPath)) {
-    console.error('Audio file not found:', {
-      path: audioPath,
-      requestPath: req.path,
-      env: app.get("env")
-    });
-    return res.status(404).json({ error: 'Audio file not found' });
-  }
-
   res.sendFile(audioPath, {
     headers: {
-      'Content-Type': 'audio/wav',
-      'Accept-Ranges': 'bytes'
+      'Content-Type': 'audio/mpeg'
     }
   }, (err) => {
     if (err) {
-      console.error('Error serving audio file:', {
-        path: audioPath,
-        error: err.message,
-        code: err.code,
-        env: app.get("env")
-      });
+      console.error('Error serving MP3 file:', err);
       if (!res.headersSent) {
         res.status(500).json({ error: 'Error serving audio file' });
       }
-    } else {
-      console.log('Successfully served audio file:', audioPath);
     }
   });
 });
