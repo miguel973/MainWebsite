@@ -24,9 +24,9 @@ export default function Navbar() {
                 <img 
                   src="/signal-2024-12-14-215011_002.png" 
                   alt="Taveras Holdings LLC"
-                  className="h-16 w-auto cursor-pointer"
+                  className="h-12 w-auto cursor-pointer"
                 />
-                <span className="ml-2 text-muted-foreground text-sm">Taveras Holdings LLC</span>
+                <span className="ml-2 text-muted-foreground text-sm font-bold">Taveras Holdings LLC</span>
               </div>
             </Link>
           </div>
