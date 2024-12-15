@@ -74,6 +74,11 @@ export default function About() {
                 <div className="text-muted-foreground">Strategic Ascent • Jan 2019 - Jan 2021</div>
                 <p className="mt-2">Designed virtual training curricula for entry-level engineers, reducing onboarding time by 17%. Led organizational compliance assessments resulting in substantial cost savings.</p>
               </li>
+              <li>
+                <div className="font-semibold">Technical Expert & Genius</div>
+                <div className="text-muted-foreground">Apple Retail • Jan 2015 - Jan 2021</div>
+                <p className="mt-2">Progressed through multiple technical and customer-facing roles including Technical Specialist, Business Pro, Technical Expert, and Genius, demonstrating expertise in Apple technologies and leadership in customer service excellence.</p>
+              </li>
             </ul>
           </Card>
 
