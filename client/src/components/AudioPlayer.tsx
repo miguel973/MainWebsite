@@ -63,11 +63,13 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
           });
         }}
         preload="auto"
-        src={audioUrl}
         onLoadedData={() => {
           console.log('Audio loaded successfully');
         }}
       >
+        <source src={audioUrl} type="audio/wav" />
+        <source src={audioUrl.replace('.wav', '.mp3')} type="audio/mpeg" />
+        <source src={audioUrl.replace('.wav', '.ogg')} type="audio/ogg" />
         Your browser does not support the audio element.
       </audio>
       
