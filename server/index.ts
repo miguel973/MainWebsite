@@ -8,9 +8,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Serve static files with proper MIME types
-const staticPath = app.get("env") === "development" 
-  ? path.join(process.cwd(), 'client/public')
-  : path.join(process.cwd(), 'dist/public');
+const staticPath = path.join(process.cwd(), app.get("env") === "development" 
+  ? 'client/public'
+  : 'dist/public');
+
+console.log('Static files being served from:', staticPath);
 
 console.log('Static files being served from:', staticPath);
 
@@ -46,7 +48,12 @@ app.get('*.mp3', (req, res, next) => {
 
 // Add security and CORS headers
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // Allow Replit domains and local development
+  const allowedOrigins = [/\.replit\.dev$/, /^http:\/\/localhost:/];
+  const origin = req.headers.origin;
+  if (origin && allowedOrigins.some(pattern => pattern.test(origin))) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   res.setHeader('X-Frame-Options', 'DENY');
@@ -109,7 +116,8 @@ app.use((req, res, next) => {
   // this serves both the API and the client
   const PORT = process.env.PORT || 5000;
   
-  server.listen(PORT, () => {
-    log(`Server running at http://localhost:${PORT}`);
+  server.listen(PORT, "0.0.0.0", () => {
+    log(`Server running at http://0.0.0.0:${PORT}`);
+    log('For Replit: Open the "Webview" tab or check your .replit dev URL');
   });
 })();
