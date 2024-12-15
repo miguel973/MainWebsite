@@ -42,8 +42,18 @@ export default function Home() {
             transition={{ delay: 0.3 }}
             className="text-2xl text-muted-foreground mt-4"
           >
-            Senior Engineering Program Manager at Apple Intelligence
+            Senior Engineering Program Manager at Apple -- Apple Intelligence
           </motion.h2>
+          
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="mt-6 bg-muted p-4 rounded-lg"
+          >
+            <h3 className="text-xl font-semibold mb-4">Audio Overview</h3>
+            <AudioPlayer audioUrl={`${import.meta.env.BASE_URL}Me.wav`} />
+          </motion.div>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -76,9 +86,7 @@ export default function Home() {
           transition={{ delay: 0.6 }}
           className="bg-muted p-6 rounded-lg"
         >
-          <h3 className="text-xl font-semibold mb-4">Audio Overview</h3>
-          <AudioPlayer audioUrl={`${import.meta.env.BASE_URL}Me.wav`} />
-          <div className="mt-8">
+          <div className="mt-4">
             <h3 className="text-xl font-semibold mb-4">Featured Projects</h3>
             <ProjectCarousel />
           </div>
