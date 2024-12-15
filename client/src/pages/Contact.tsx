@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useMutation } from "@tanstack/react-query";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -30,16 +29,27 @@ export default function Contact() {
   });
 
   const onSubmit = (data: FormData) => {
+    // Validate the form data
+    if (!data.name || !data.email || !data.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all fields",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Format the email body
     const subject = "Contact Form Submission";
     const body = `
 Name: ${data.name}
 Email: ${data.email}
 
 Message:
-${data.message}
-    `;
-    
-    window.location.href = `mailto:taverasholdingsllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+${data.message}`;
+
+    // Open email client with formatted message
+    window.location.href = `mailto:taverasholdingsllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body.trim())}`;
     
     toast({
       title: "Opening email client",
