@@ -1,10 +1,32 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import path from "path";
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// Serve static files with proper MIME types
+app.use(express.static(path.join(process.cwd(), 'client/public'), {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.wav')) {
+      res.set('Content-Type', 'audio/wav');
+    }
+  },
+  fallthrough: true // Continue to next middleware if file not found
+}));
+
+// Add specific route for audio files with error handling
+app.get('*.wav', (req, res, next) => {
+  const audioPath = path.join(process.cwd(), 'client/public', req.path);
+  res.sendFile(audioPath, (err) => {
+    if (err) {
+      console.error('Error serving audio file:', err);
+      next(err);
+    }
+  });
+});
 
 // Add security and CORS headers
 app.use((req, res, next) => {
