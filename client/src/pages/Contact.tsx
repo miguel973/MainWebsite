@@ -28,35 +28,42 @@ export default function Contact() {
     }
   });
 
-  const onSubmit = (data: FormData) => {
-    // Validate the form data
-    if (!data.name || !data.email || !data.message) {
+  const onSubmit = async (data: FormData) => {
+    try {
+      // Show loading toast
+      toast({
+        title: "Sending message...",
+        description: "Please wait while we process your message.",
+      });
+
+      // Send message to backend API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      // Show success message
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. We'll get back to you soon.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      console.error('Error sending message:', error);
       toast({
         title: "Error",
-        description: "Please fill in all fields",
+        description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
-      return;
     }
-
-    // Format the email body
-    const subject = "Contact Form Submission";
-    const body = `
-Name: ${data.name}
-Email: ${data.email}
-
-Message:
-${data.message}`;
-
-    // Open email client with formatted message
-    window.location.href = `mailto:taverasholdingsllc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body.trim())}`;
-    
-    toast({
-      title: "Opening email client",
-      description: "Your default email application will open to send the message.",
-    });
-    
-    form.reset();
   };
 
   return (
