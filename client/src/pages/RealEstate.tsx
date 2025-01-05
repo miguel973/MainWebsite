@@ -16,7 +16,7 @@ const properties = [
   {
     address: "307 Mission Ln, Houston, TX 77011",
     harLink: "https://www.har.com/homedetail/307-mission-ln-houston-tx-77011/11104799",
-    status: "Available in January 2026",
+    status: "Taken until January 2026",
     image: "/mission-townhouse.png",
     bedrooms: 3,
     bathrooms: "3 Full",
