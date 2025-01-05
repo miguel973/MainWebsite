@@ -6,7 +6,7 @@ const properties = [
   {
     address: "2305 Bastrop St A, Houston, TX 77004",
     harLink: "https://www.har.com/homedetail/2305-bastrop-st-a-houston-tx-77004/10132155",
-    status: "Taken until March 2026",
+    status: "Taken until June 2026",
     image: "/bastrop-townhouse.png",
     bedrooms: 3,
     bathrooms: "2 Full & 1 Half",
@@ -16,7 +16,7 @@ const properties = [
   {
     address: "307 Mission Ln, Houston, TX 77011",
     harLink: "https://www.har.com/homedetail/307-mission-ln-houston-tx-77011/11104799",
-    status: "Available Now",
+    status: "Available in January 2026",
     image: "/mission-townhouse.png",
     bedrooms: 3,
     bathrooms: "3 Full",
@@ -42,12 +42,12 @@ export default function RealEstate() {
       className="container mx-auto px-4 py-16"
     >
       <h1 className="text-4xl font-bold mb-8">Real Estate Portfolio</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         {properties.map((property, index) => (
           <Card key={index} className="p-6">
             <h3 className="text-xl font-semibold mb-2">{property.address}</h3>
-            <Badge 
+            <Badge
               variant={property.status.includes("Available") ? "default" : "secondary"}
               className="mb-4"
             >
@@ -59,9 +59,9 @@ export default function RealEstate() {
               <p>{property.sqft.toLocaleString()} Sqft</p>
               <p>{property.type}</p>
             </div>
-            <a 
-              href={property.harLink} 
-              target="_blank" 
+            <a
+              href={property.harLink}
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline block mb-4"
             >
@@ -91,7 +91,7 @@ export default function RealEstate() {
             <strong>Company:</strong> {agent.company}
           </p>
           <p>
-            <a 
+            <a
               href={agent.website}
               target="_blank"
               rel="noopener noreferrer"
