@@ -7,14 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Serve static files with proper MIME types
 const staticPath = path.join(process.cwd(), app.get("env") === "development" 
   ? 'client/public'
   : 'dist/public');
 
-console.log('Static files being served from:', staticPath);
-
-console.log('Static files being served from:', staticPath);
+log('Static files being served from: ' + staticPath);
 
 app.use(express.static(staticPath, {
   setHeaders: (res, filePath) => {
@@ -24,14 +21,13 @@ app.use(express.static(staticPath, {
       res.set('Content-Type', 'audio/mpeg');
     }
   },
-  fallthrough: true // Continue to next middleware if file not found
+  fallthrough: true
 }));
 
-// Add specific route for MP3 files
 app.get('*.mp3', (req, res, next) => {
   const audioPath = path.join(staticPath, req.path);
-  console.log('Serving MP3 file:', audioPath);
-  
+  log('Serving MP3 file: ' + audioPath);
+
   res.sendFile(audioPath, {
     headers: {
       'Content-Type': 'audio/mpeg'
@@ -46,9 +42,7 @@ app.get('*.mp3', (req, res, next) => {
   });
 });
 
-// Add security and CORS headers
 app.use((req, res, next) => {
-  // Allow Replit domains and local development
   const allowedOrigins = [/\.replit\.dev$/, /^http:\/\/localhost:/];
   const origin = req.headers.origin;
   if (origin && allowedOrigins.some(pattern => pattern.test(origin))) {
@@ -93,31 +87,32 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  const server = registerRoutes(app);
+  try {
+    const server = registerRoutes(app);
 
-  app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-    const status = err.status || err.statusCode || 500;
-    const message = err.message || "Internal Server Error";
+    app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
+      const status = err.status || err.statusCode || 500;
+      const message = err.message || "Internal Server Error";
+      log(`Error: ${message}`);
+      res.status(status).json({ message });
+    });
 
-    res.status(status).json({ message });
-    throw err;
-  });
+    if (app.get("env") === "development") {
+      await setupVite(app, server);
+    } else {
+      serveStatic(app);
+    }
 
-  // importantly only setup vite in development and after
-  // setting up all the other routes so the catch-all route
-  // doesn't interfere with the other routes
-  if (app.get("env") === "development") {
-    await setupVite(app, server);
-  } else {
-    serveStatic(app);
+    const port = Number(process.env.PORT) || 5000;
+    const host = "0.0.0.0";
+
+    server.listen(port, host, () => {
+      log(`Server running at http://${host}:${port}`);
+      log('For Replit: Open the "Webview" tab or check your .replit dev URL');
+    });
+
+  } catch (error) {
+    log(`Failed to start server: ${error}`);
+    process.exit(1);
   }
-
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client
-  const PORT = process.env.PORT || 5000;
-  
-  server.listen(PORT, "0.0.0.0", () => {
-    log(`Server running at http://0.0.0.0:${PORT}`);
-    log('For Replit: Open the "Webview" tab or check your .replit dev URL');
-  });
 })();

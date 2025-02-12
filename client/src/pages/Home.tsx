@@ -95,7 +95,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
                 <h4 className="font-semibold">307 Mission Ln, Houston, TX 77011</h4>
-                <Badge variant="default" className="mt-2">Available Now</Badge>
+                <Badge variant="default" className="mt-2">Taken until January 2026</Badge>
                 <div className="space-y-1 mt-2 text-sm">
                   <p>3 Bedroom(s)</p>
                   <p>3 Full Bath(s)</p>
