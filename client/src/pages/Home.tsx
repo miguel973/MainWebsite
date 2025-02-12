@@ -44,7 +44,6 @@ export default function Home() {
           >
             Senior Engineering Program Manager at Apple - Apple Intelligence
           </motion.h2>
-          
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -80,6 +79,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </div>
+
         <motion.div 
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -95,7 +95,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
                 <h4 className="font-semibold">307 Mission Ln, Houston, TX 77011</h4>
-                <Badge variant="default" className="mt-2">Taken until January 2026</Badge>
+                <Badge variant="secondary" className="mt-2">Taken until January 2026</Badge>
                 <div className="space-y-1 mt-2 text-sm">
                   <p>3 Bedroom(s)</p>
                   <p>3 Full Bath(s)</p>
@@ -113,7 +113,7 @@ export default function Home() {
               </div>
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
                 <h4 className="font-semibold">2305 Bastrop St A, Houston, TX 77004</h4>
-                <Badge variant="secondary" className="mt-2">Taken until March 2026</Badge>
+                <Badge variant="secondary" className="mt-2">Taken until June 2026</Badge>
                 <div className="space-y-1 mt-2 text-sm">
                   <p>3 Bedroom(s)</p>
                   <p>2 Full & 1 Half Bath(s)</p>
