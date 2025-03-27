@@ -23,7 +23,7 @@ export default function About() {
           <Card className="p-6">
             <h2 className="text-2xl font-semibold mb-4">Professional Journey</h2>
             <p className="text-lg leading-relaxed">
-              As a Senior Engineering Program Manager at Apple Intelligence, I drive innovation in AI/ML and LLMs while keeping the user front and center. With a proven track record in orchestrating complex AI/ML client/server software features for major OS releases involving 100+ people, I excel at managing multiple work streams and translating technical requirements into long-term platform roadmaps.
+              As a Senior Program Manager, I specialize in delivering large-scale, innovative technology projects with a focus on LLMs that reach billions of users worldwide. I lead cross-functional teams through complex deployments and optimizations while managing AI infrastructure to enhance platform efficiency. My technical expertise is complemented by a strong interpersonal foundation built from over six years of direct customer service, where I completed more than 15,000 technical appointments.
             </p>
             <div className="mt-4 space-y-4">
               <div>

@@ -59,7 +59,7 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-relaxed"
           >
-            Senior Technical Product Manager with extensive experience in AI/ML, LLMs, program management, and product development. Dedicated to keeping the user front and center in all technological advancements. I specialize in natural language understanding and orchestrating complex AI/ML features for major OS releases.
+            Senior Program Manager specializing in large-scale technology projects and LLM implementations that reach billions of users worldwide. I combine AI infrastructure expertise with strong interpersonal skills built from 6+ years of customer service experience (15,000+ technical appointments). Focused on creating solutions that enhance scalability, performance, and user experience across complex deployments.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}
