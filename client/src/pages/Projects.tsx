@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: "Use ChatGPT with Apple Intelligence on iPhone",
-    description: "Integrated ChatGPT capabilities with Apple Intelligence on iPhone, creating a seamless and privacy-focused user experience. Developed features allowing Siri to access ChatGPT for questions about photos and documents, enabled ChatGPT with Writing Tools to compose text or images from descriptions, and implemented visual intelligence with Camera Control to help users learn about places and objects. Users can connect their ChatGPT accounts (free or paid) for enhanced capabilities while maintaining strong privacy controls.",
+    description: "Integrated ChatGPT capabilities with Apple Intelligence on iPhone, creating a seamless and privacy-focused user experience. Developed features allowing Siri to access ChatGPT to provide answers when helpful for certain requests, including questions about photos and documents. This integration maintains strong privacy controls while enhancing Siri's ability to respond to complex queries.",
     tags: ["ChatGPT", "Apple Intelligence", "Privacy", "iOS", "Machine Learning"],
     year: "2024",
     link: "https://support.apple.com/guide/iphone/use-chatgpt-with-apple-intelligence-iph00fd3c8c2/ios"
