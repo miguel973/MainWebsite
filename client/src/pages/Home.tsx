@@ -42,7 +42,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
             className="text-2xl text-muted-foreground mt-4"
           >
-            Senior Program Manager at Apple, Platform Accuracy and Scale
+            Senior Program Manager at Apple
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0 }}
