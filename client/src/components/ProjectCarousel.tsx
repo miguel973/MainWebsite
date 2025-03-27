@@ -15,11 +15,11 @@ const projects = [
     link: "https://security.apple.com/blog/private-cloud-compute/"
   },
   {
-    title: "Cross-App Context Awareness and In-App Actions for Siri",
-    description: "Developed intelligent cross-app action system enabling Siri to understand context across applications. Users can seamlessly perform actions across apps, with Siri understanding context and automating multi-step processes.",
-    tags: ["Machine Learning", "NLP", "User Context"],
+    title: "Use ChatGPT with Apple Intelligence on iPhone",
+    description: "Integrated ChatGPT capabilities with Apple Intelligence, enabling Siri to access ChatGPT for questions about photos and documents, using ChatGPT with Writing Tools to compose text or images, and leveraging visual intelligence with Camera Control to learn about places and objects.",
+    tags: ["ChatGPT", "Apple Intelligence", "Privacy"],
     year: "2024",
-    link: "https://www.apple.com/apple-intelligence/#:~:text=Seamlessly%20take%20action,a%20finger.1"
+    link: "https://support.apple.com/guide/iphone/use-chatgpt-with-apple-intelligence-iph00fd3c8c2/ios"
   },
   {
     title: "Natural Language Router Development",

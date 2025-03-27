@@ -12,11 +12,11 @@ const projects = [
     link: "https://security.apple.com/blog/private-cloud-compute/"
   },
   {
-    title: "Cross-App Context Awareness and In-App Actions for Siri",
-    description: "Developed intelligent cross-app action system enabling Siri to understand context across applications. Users can seamlessly perform actions like 'Send the email I drafted to April and Lilly' and Siri knows which email you're referencing and which app it's in. After asking Siri to enhance a photo by saying 'Make this photo pop,' you can ask Siri to drop it in a specific note in the Notes app — without lifting a finger.",
-    tags: ["Machine Learning", "NLP", "User Context", "Cross-App Integration"],
+    title: "Use ChatGPT with Apple Intelligence on iPhone",
+    description: "Integrated ChatGPT capabilities with Apple Intelligence on iPhone, creating a seamless and privacy-focused user experience. Developed features allowing Siri to access ChatGPT for questions about photos and documents, enabled ChatGPT with Writing Tools to compose text or images from descriptions, and implemented visual intelligence with Camera Control to help users learn about places and objects. Users can connect their ChatGPT accounts (free or paid) for enhanced capabilities while maintaining strong privacy controls.",
+    tags: ["ChatGPT", "Apple Intelligence", "Privacy", "iOS", "Machine Learning"],
     year: "2024",
-    link: "https://www.apple.com/apple-intelligence/#:~:text=Seamlessly%20take%20action,a%20finger.1"
+    link: "https://support.apple.com/guide/iphone/use-chatgpt-with-apple-intelligence-iph00fd3c8c2/ios"
   },
   {
     title: "Natural Language Router Development",
