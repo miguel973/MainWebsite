@@ -41,9 +41,9 @@ export default function ProjectCarousel() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
   };
 
-  // Auto-advance every 5 seconds
+  // Auto-advance every 5.75 seconds (15% slower than before)
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
+    const timer = setInterval(nextSlide, 5750);
     return () => clearInterval(timer);
   }, []);
 
