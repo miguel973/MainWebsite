@@ -45,8 +45,8 @@ export default function About() {
             <h2 className="text-2xl font-semibold mb-4">Recent Experience</h2>
             <ul className="space-y-4">
               <li>
-                <div className="font-semibold">Senior Engineering Program Manager</div>
-                <div className="text-muted-foreground">Apple Intelligence • Sep 2024 - Present</div>
+                <div className="font-semibold">Senior Program Manager</div>
+                <div className="text-muted-foreground">Apple, Platform Accuracy and Scale • Sep 2024 - Present</div>
                 <p className="mt-2">Leading Accuracy, Platform, and Scale initiatives for Siri, focusing on Large Language Models (LLM) and Natural Language Understanding.</p>
               </li>
               <li>
