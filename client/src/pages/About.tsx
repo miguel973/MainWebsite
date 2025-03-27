@@ -23,7 +23,7 @@ export default function About() {
           <Card className="p-6">
             <h2 className="text-2xl font-semibold mb-4">Professional Journey</h2>
             <p className="text-lg leading-relaxed">
-              As a Senior Program Manager, I specialize in delivering large-scale, innovative technology projects with a focus on LLMs that reach billions of users worldwide. I lead cross-functional teams through complex deployments and optimizations while managing AI infrastructure to enhance platform efficiency. My technical expertise is complemented by a strong interpersonal foundation built from over six years of direct customer service, where I completed more than 15,000 technical appointments.
+              I'm Miguel—a Senior Program Manager dedicated to bringing advanced technology projects and AI-driven experiences to life for billions of users worldwide. With deep expertise in large-scale deployments of machine learning and Large Language Models (LLMs), I focus on making complex technologies accessible, scalable, and impactful. My unique blend of technical leadership and exceptional customer-focused skills, honed over 15,000 technical appointments, helps me build solutions that genuinely resonate with users. Beyond tech, I'm a passionate adventurer exploring motorcycles, scuba diving, real estate investing, and global travel.
             </p>
             <div className="mt-4 space-y-4">
               <div>

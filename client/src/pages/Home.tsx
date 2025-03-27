@@ -59,7 +59,7 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-relaxed"
           >
-            Senior Program Manager specializing in large-scale technology projects and LLM implementations that reach billions of users worldwide. I combine AI infrastructure expertise with strong interpersonal skills built from 6+ years of customer service experience (15,000+ technical appointments). Focused on creating solutions that enhance scalability, performance, and user experience across complex deployments.
+            I'm Miguel—a Senior Program Manager dedicated to bringing advanced technology projects and AI-driven experiences to life for billions of users worldwide. With deep expertise in large-scale deployments of machine learning and Large Language Models (LLMs), I focus on making complex technologies accessible, scalable, and impactful. My unique blend of technical leadership and exceptional customer-focused skills, honed over 15,000 technical appointments, helps me build solutions that genuinely resonate with users. Beyond tech, I'm a passionate adventurer exploring motorcycles, scuba diving, real estate investing, and global travel.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}
