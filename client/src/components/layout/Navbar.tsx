@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link key={item.path} href={item.path}>
                 <Button
                   variant={location === item.path ? "default" : "ghost"}
-                  className="text-sm"
+                  className="text-sm font-bold"
                 >
                   {item.label}
                 </Button>
@@ -65,7 +65,7 @@ export default function Navbar() {
                 <Link key={item.path} href={item.path}>
                   <Button
                     variant={location === item.path ? "default" : "ghost"}
-                    className="w-full text-left"
+                    className="w-full text-left font-bold"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
