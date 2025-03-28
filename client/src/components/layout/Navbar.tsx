@@ -26,7 +26,7 @@ export default function Navbar() {
                   alt="Taveras Holdings LLC"
                   className="h-12 w-auto cursor-pointer"
                 />
-                <span className="ml-2 text-muted-foreground text-sm font-bold">Taveras Holdings LLC</span>
+                <span className="ml-2 text-muted-foreground text-lg font-bold">Taveras Holdings LLC</span>
               </div>
             </Link>
           </div>
