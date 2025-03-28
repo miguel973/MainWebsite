@@ -39,10 +39,10 @@ const videoData: VideoItem[] = [
   },
   {
     id: 'tiktok-3',
-    title: 'Heavenly Vibes',
+    title: 'Snowboarding at Lake Tahoe',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7226086306265222443" data-video-id="7226086306265222443" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Heavenly is such a vibe <a title="heaven" target="_blank" href="https://www.tiktok.com/tag/heaven?refer=embed">#heaven</a> <a title="heavenly" target="_blank" href="https://www.tiktok.com/tag/heavenly?refer=embed">#heavenly</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://images.unsplash.com/photo-1502481851512-e93e0c96ed6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWRzJTIwYmx1ZSUyMHNreXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c25vd2JvYXJkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     category: 'other'
   },
   {
