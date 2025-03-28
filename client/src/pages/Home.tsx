@@ -91,6 +91,30 @@ export default function Home() {
             <ProjectCarousel />
           </div>
           <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Media Showcase</h3>
+            <div className="p-4 border rounded-lg hover:bg-muted transition-colors">
+              <h4 className="font-semibold">Drone Footage & Video Content</h4>
+              <p className="mt-2 text-sm">Check out my professional drone footage and video content showcasing properties and landscapes across Texas.</p>
+              <div className="mt-3 flex">
+                <img 
+                  src="https://img.youtube.com/vi/WHGMVOq5QG0/mqdefault.jpg" 
+                  alt="Drone Footage Preview" 
+                  className="w-24 h-14 object-cover rounded"
+                />
+                <div className="ml-3 mt-1 text-sm">
+                  <p className="font-medium">Houston Aerial Views</p>
+                  <p className="text-muted-foreground">Drone footage showcase</p>
+                </div>
+              </div>
+              <Link href="/media">
+                <Button variant="outline" size="sm" className="mt-3">
+                  View Media Gallery <ArrowRight className="ml-1 h-3 w-3" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+          
+          <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">Featured Properties</h3>
             <div className="space-y-4">
               <div className="p-4 border rounded-lg hover:bg-muted transition-colors">

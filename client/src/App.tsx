@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Publications from "./pages/Publications";
 import Schedule from "./pages/Schedule";
 import Contact from "./pages/Contact";
+import Media from "./pages/Media";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import { motion, AnimatePresence } from "framer-motion";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/publications" component={Publications} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/contact" component={Contact} />
+            <Route path="/media" component={Media} />
             <Route>
               <motion.div
                 initial={{ opacity: 0 }}
