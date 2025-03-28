@@ -2,7 +2,6 @@ import { Switch, Route } from "wouter";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Publications from "./pages/Publications";
 import Schedule from "./pages/Schedule";
 import Contact from "./pages/Contact";
 import Media from "./pages/Media";
@@ -20,7 +19,6 @@ function App() {
             <Route path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
-            <Route path="/publications" component={Publications} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/contact" component={Contact} />
             <Route path="/media" component={Media} />

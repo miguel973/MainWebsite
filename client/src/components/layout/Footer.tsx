@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="font-semibold mb-3">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="flex flex-wrap gap-4">
               <li>
                 <Link href="/about">
                   <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer">
@@ -22,6 +22,13 @@ export default function Footer() {
                 <Link href="/projects">
                   <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer">
                     Projects
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/media">
+                  <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer">
+                    Media
                   </span>
                 </Link>
               </li>
