@@ -26,7 +26,7 @@ const videoData: VideoItem[] = [
     title: 'Drone Gang Gang',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/6845102309823892742" data-video-id="6845102309823892742" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Drone Gang Gang 🚁 <a title="hitmeup" target="_blank" href="https://www.tiktok.com/tag/hitmeup?refer=embed">#hitMeUP</a> <a title="drones" target="_blank" href="https://www.tiktok.com/tag/drones?refer=embed">#Drones</a> Hmu in Houston if you need footage 🔥🔥<a title="houston" target="_blank" href="https://www.tiktok.com/tag/houston?refer=embed">#Houston</a> <a title="weflyhigh" target="_blank" href="https://www.tiktok.com/tag/weflyhigh?refer=embed">#weFlyHigh</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://i.imgur.com/gkWZLqH.png',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJvbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
     category: 'drone'
   },
   {
@@ -34,7 +34,7 @@ const videoData: VideoItem[] = [
     title: 'San Antonio Drone',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/6846924698102664454" data-video-id="6846924698102664454" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Quick Dronio in San Antonio 🚁🚁🚁 <a title="drones" target="_blank" href="https://www.tiktok.com/tag/drones?refer=embed">#drones</a> <a title="cono" target="_blank" href="https://www.tiktok.com/tag/cono?refer=embed">#cono</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://i.imgur.com/GdNXpLl.png',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1508444845599-5c89863b1c44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZHJvbmUlMjBjaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     category: 'drone'
   },
   {
@@ -42,7 +42,7 @@ const videoData: VideoItem[] = [
     title: 'Heavenly Vibes',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7226086306265222443" data-video-id="7226086306265222443" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Heavenly is such a vibe <a title="heaven" target="_blank" href="https://www.tiktok.com/tag/heaven?refer=embed">#heaven</a> <a title="heavenly" target="_blank" href="https://www.tiktok.com/tag/heavenly?refer=embed">#heavenly</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://i.imgur.com/GgwErW9.png',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1502481851512-e93e0c96ed6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWRzJTIwYmx1ZSUyMHNreXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
     category: 'other'
   },
   {
@@ -50,7 +50,7 @@ const videoData: VideoItem[] = [
     title: 'Underwater Adventure',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7315449074306518314" data-video-id="7315449074306518314" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://i.imgur.com/9f7UUEu.png',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1682687982049-b3d433368cd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8dW5kZXJ3YXRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
     category: 'underwater'
   },
   {
@@ -58,7 +58,7 @@ const videoData: VideoItem[] = [
     title: 'Scuba Diving',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7315856719307902250" data-video-id="7315856719307902250" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> 🐟 <a title="scuba" target="_blank" href="https://www.tiktok.com/tag/scuba?refer=embed">#scuba</a> <a title="scubadiving" target="_blank" href="https://www.tiktok.com/tag/scubadiving?refer=embed">#scubadiving</a> <a title="scubatiktok" target="_blank" href="https://www.tiktok.com/tag/scubatiktok?refer=embed">#scubatiktok</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://i.imgur.com/dQ9n6dn.png',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2N1YmElMjBkaXZpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
     category: 'underwater'
   },
   {
@@ -66,7 +66,7 @@ const videoData: VideoItem[] = [
     title: 'Summer in Indonesia',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7412399199070866719" data-video-id="7412399199070866719" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Summer was epic ☀️ <a title="komodo" target="_blank" href="https://www.tiktok.com/tag/komodo?refer=embed">#komodo</a> <a title="diving" target="_blank" href="https://www.tiktok.com/tag/diving?refer=embed">#diving</a> <a title="livaboard" target="_blank" href="https://www.tiktok.com/tag/livaboard?refer=embed">#livaboard</a> <a title="indonesia" target="_blank" href="https://www.tiktok.com/tag/indonesia?refer=embed">#indonesia</a> <a title="ikanbiru" target="_blank" href="https://www.tiktok.com/tag/ikanbiru?refer=embed">#ikanbiru</a> <a title="shark" target="_blank" href="https://www.tiktok.com/tag/shark?refer=embed">#shark</a> <a title="turtle" target="_blank" href="https://www.tiktok.com/tag/turtle?refer=embed">#turtle</a> <a title="driftdiving" target="_blank" href="https://www.tiktok.com/tag/driftdiving?refer=embed">#driftdiving</a> <a title="flores" target="_blank" href="https://www.tiktok.com/tag/flores?refer=embed">#flores</a> </section> </blockquote>`,
-    thumbnailUrl: 'https://i.imgur.com/iZuL5sS.png',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1510797215324-95aa89f43c33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kb25lc2lhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     category: 'underwater'
   }
 ];
