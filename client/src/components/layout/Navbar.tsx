@@ -26,7 +26,7 @@ export default function Navbar() {
                   alt="Taveras Holdings LLC"
                   className="h-12 w-auto cursor-pointer"
                 />
-                <span className="ml-2 text-muted-foreground text-lg font-bold">Taveras Holdings LLC</span>
+                <span className="ml-2 text-muted-foreground font-bold text-base">Taveras Holdings LLC</span>
               </div>
             </Link>
           </div>
@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link key={item.path} href={item.path}>
                 <Button
                   variant={location === item.path ? "default" : "ghost"}
-                  className="text-sm"
+                  className="text-base"
                 >
                   {item.label}
                 </Button>
