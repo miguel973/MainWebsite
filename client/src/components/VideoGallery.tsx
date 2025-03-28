@@ -26,7 +26,7 @@ const videoData: VideoItem[] = [
     title: 'Drone Gang Gang',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/6845102309823892742" data-video-id="6845102309823892742" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Drone Gang Gang 🚁 <a title="hitmeup" target="_blank" href="https://www.tiktok.com/tag/hitmeup?refer=embed">#hitMeUP</a> <a title="drones" target="_blank" href="https://www.tiktok.com/tag/drones?refer=embed">#Drones</a> Hmu in Houston if you need footage 🔥🔥<a title="houston" target="_blank" href="https://www.tiktok.com/tag/houston?refer=embed">#Houston</a> <a title="weflyhigh" target="_blank" href="https://www.tiktok.com/tag/weflyhigh?refer=embed">#weFlyHigh</a> </section> </blockquote>`,
-    thumbnailUrl: '/tiktok-thumbnail-1.jpg',
+    thumbnailUrl: 'https://i.imgur.com/gkWZLqH.png',
     category: 'drone'
   },
   {
@@ -34,7 +34,7 @@ const videoData: VideoItem[] = [
     title: 'San Antonio Drone',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/6846924698102664454" data-video-id="6846924698102664454" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Quick Dronio in San Antonio 🚁🚁🚁 <a title="drones" target="_blank" href="https://www.tiktok.com/tag/drones?refer=embed">#drones</a> <a title="cono" target="_blank" href="https://www.tiktok.com/tag/cono?refer=embed">#cono</a> </section> </blockquote>`,
-    thumbnailUrl: '/tiktok-thumbnail-2.jpg',
+    thumbnailUrl: 'https://i.imgur.com/GdNXpLl.png',
     category: 'drone'
   },
   {
@@ -42,7 +42,7 @@ const videoData: VideoItem[] = [
     title: 'Heavenly Vibes',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7226086306265222443" data-video-id="7226086306265222443" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Heavenly is such a vibe <a title="heaven" target="_blank" href="https://www.tiktok.com/tag/heaven?refer=embed">#heaven</a> <a title="heavenly" target="_blank" href="https://www.tiktok.com/tag/heavenly?refer=embed">#heavenly</a> </section> </blockquote>`,
-    thumbnailUrl: '/tiktok-thumbnail-3.jpg',
+    thumbnailUrl: 'https://i.imgur.com/GgwErW9.png',
     category: 'other'
   },
   {
@@ -50,7 +50,7 @@ const videoData: VideoItem[] = [
     title: 'Underwater Adventure',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7315449074306518314" data-video-id="7315449074306518314" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> </section> </blockquote>`,
-    thumbnailUrl: '/tiktok-thumbnail-4.jpg',
+    thumbnailUrl: 'https://i.imgur.com/9f7UUEu.png',
     category: 'underwater'
   },
   {
@@ -58,7 +58,7 @@ const videoData: VideoItem[] = [
     title: 'Scuba Diving',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7315856719307902250" data-video-id="7315856719307902250" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> 🐟 <a title="scuba" target="_blank" href="https://www.tiktok.com/tag/scuba?refer=embed">#scuba</a> <a title="scubadiving" target="_blank" href="https://www.tiktok.com/tag/scubadiving?refer=embed">#scubadiving</a> <a title="scubatiktok" target="_blank" href="https://www.tiktok.com/tag/scubatiktok?refer=embed">#scubatiktok</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> </section> </blockquote>`,
-    thumbnailUrl: '/tiktok-thumbnail-5.jpg',
+    thumbnailUrl: 'https://i.imgur.com/dQ9n6dn.png',
     category: 'underwater'
   },
   {
@@ -66,7 +66,7 @@ const videoData: VideoItem[] = [
     title: 'Summer in Indonesia',
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7412399199070866719" data-video-id="7412399199070866719" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Summer was epic ☀️ <a title="komodo" target="_blank" href="https://www.tiktok.com/tag/komodo?refer=embed">#komodo</a> <a title="diving" target="_blank" href="https://www.tiktok.com/tag/diving?refer=embed">#diving</a> <a title="livaboard" target="_blank" href="https://www.tiktok.com/tag/livaboard?refer=embed">#livaboard</a> <a title="indonesia" target="_blank" href="https://www.tiktok.com/tag/indonesia?refer=embed">#indonesia</a> <a title="ikanbiru" target="_blank" href="https://www.tiktok.com/tag/ikanbiru?refer=embed">#ikanbiru</a> <a title="shark" target="_blank" href="https://www.tiktok.com/tag/shark?refer=embed">#shark</a> <a title="turtle" target="_blank" href="https://www.tiktok.com/tag/turtle?refer=embed">#turtle</a> <a title="driftdiving" target="_blank" href="https://www.tiktok.com/tag/driftdiving?refer=embed">#driftdiving</a> <a title="flores" target="_blank" href="https://www.tiktok.com/tag/flores?refer=embed">#flores</a> </section> </blockquote>`,
-    thumbnailUrl: '/tiktok-thumbnail-6.jpg',
+    thumbnailUrl: 'https://i.imgur.com/iZuL5sS.png',
     category: 'underwater'
   }
 ];
@@ -118,17 +118,11 @@ export default function VideoGallery({ category = 'all' }: VideoGalleryProps) {
             onClick={() => handleVideoSelect(video)}
           >
             <div className="relative aspect-video">
-              {video.thumbnailUrl.startsWith('/tiktok-thumbnail') ? (
-                <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                  <span className="text-lg font-medium">{video.title}</span>
-                </div>
-              ) : (
-                <img 
-                  src={video.thumbnailUrl} 
-                  alt={video.title}
-                  className="w-full h-full object-cover"
-                />
-              )}
+              <img 
+                src={video.thumbnailUrl} 
+                alt={video.title}
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                 <Button variant="secondary">
                   Play Video
