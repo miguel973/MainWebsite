@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import VideoGallery from '@/components/VideoGallery';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Film, Waves, Plane } from 'lucide-react';
+import { Film, Waves, Plane, Snowflake } from 'lucide-react';
 
 export default function Media() {
   return (
@@ -34,6 +34,10 @@ export default function Media() {
             <Waves className="h-4 w-4" />
             Underwater
           </TabsTrigger>
+          <TabsTrigger value="snowboarding" className="flex items-center gap-2">
+            <Snowflake className="h-4 w-4" />
+            Snowboarding
+          </TabsTrigger>
         </TabsList>
         
         <TabsContent value="all">
@@ -60,6 +64,17 @@ export default function Media() {
             </p>
           </div>
           <VideoGallery category="underwater" />
+        </TabsContent>
+        
+        <TabsContent value="snowboarding">
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold mb-2">Snowboarding</h2>
+            <p className="text-muted-foreground">
+              Highlights from winter adventures on the slopes at Lake Tahoe and other snow destinations.
+              Experiencing Heavenly mountain views and pristine powder runs.
+            </p>
+          </div>
+          <VideoGallery category="snowboarding" />
         </TabsContent>
       </Tabs>
     </motion.div>

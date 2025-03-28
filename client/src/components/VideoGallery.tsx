@@ -9,7 +9,7 @@ interface VideoItem {
   type: 'youtube' | 'tiktok';
   embedCode: string;
   thumbnailUrl: string;
-  category: 'drone' | 'underwater' | 'other';
+  category: 'drone' | 'underwater' | 'snowboarding' | 'other';
 }
 
 const videoData: VideoItem[] = [
@@ -43,7 +43,7 @@ const videoData: VideoItem[] = [
     type: 'tiktok',
     embedCode: `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miggysaidwhat/video/7226086306265222443" data-video-id="7226086306265222443" style="max-width: 605px;min-width: 325px;"> <section> <a target="_blank" title="@miggysaidwhat" href="https://www.tiktok.com/@miggysaidwhat?refer=embed">@miggysaidwhat</a> Heavenly is such a vibe <a title="heaven" target="_blank" href="https://www.tiktok.com/tag/heaven?refer=embed">#heaven</a> <a title="heavenly" target="_blank" href="https://www.tiktok.com/tag/heavenly?refer=embed">#heavenly</a> </section> </blockquote>`,
     thumbnailUrl: 'https://cdn.pixabay.com/photo/2019/11/11/04/33/snowboarding-4617358_1280.jpg',
-    category: 'other'
+    category: 'snowboarding'
   },
   {
     id: 'tiktok-4',
@@ -72,7 +72,7 @@ const videoData: VideoItem[] = [
 ];
 
 interface VideoGalleryProps {
-  category?: 'drone' | 'underwater' | 'all';
+  category?: 'drone' | 'underwater' | 'snowboarding' | 'all';
 }
 
 export default function VideoGallery({ category = 'all' }: VideoGalleryProps) {
